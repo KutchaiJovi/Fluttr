@@ -1,0 +1,135 @@
+#container {
+    width: 400px;
+    margin: auto !important;
+    display: block;
+    height: 100vh;
+    position: relative;
+    list-style-type: none;
+    user-select: none;
+    background-image: url('images/fluttrBG1.png');
+    background-repeat: none;
+    background-size: cover;
+}
+
+.buddy {
+    display: none;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    color: #fff;
+    width: 280px;
+    height: 350px;
+    top: 120px;
+    left: 45px;
+    position: absolute;
+    cursor: hand;
+    border-radius: 5px;
+    /* z-index: 1001; */
+}
+.avatar {
+    background: #222;
+    width: auto;
+    height: 350px;
+    display: block;
+    background-size: auto 160% !important;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.buddy>p{
+    text-align: center; 
+    color: black; 
+    font-weight: lighter;
+    padding: 35px 10px;
+    font-size: 14px;
+}
+.titleCon{
+    height: 70px;
+    width: 280px;
+    background-image: linear-gradient(rgba(255,0,0,0), rgba(0,0,0,.7));
+    background-color: none;
+    margin-top: 280px;
+    position: absolute;
+    border-radius: 5px;
+}
+.title{
+    text-decoration: none;
+    text-align: left; 
+    font-weight: lighter;
+    color: white; 
+    padding: 30px 0 0 20px;
+    font-size: 15px;
+    margin: 0;
+    text-shadow: none;
+}
+.rotate-left {
+    transform: rotate(30deg) scale(0.8);
+    transition: 2.5s;
+    margin-left: 400px;
+    cursor: e-resize;
+    opacity: 0;
+    z-index: 10;
+}
+.rotate-right {
+    transform: rotate(-30deg) scale(0.8);
+    transition: 2.5s;
+    opacity: 0;
+    margin-left: -400px;
+    cursor: w-resize;
+    z-index: 10;
+}
+
+.like {
+    color: red;
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    transform: translate(80px,-200px);
+    text-shadow: none;
+    text-decoration-line: underline;
+}
+.dislike {
+    color: #FAD961;
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    left: 5px;
+    transform: translate(30px,-200px);
+    text-decoration-line: underline;
+    text-shadow: none;
+}
+
+.likeBtn{
+    top: 600px;
+    left: 190px;
+    padding: 0 50px;
+    position: absolute;
+}
+
+.likeAction{
+    top: 580px;
+    left: 220px;
+    padding: 0 50px;
+    position: absolute;
+    /* transform: scale(1.1); */
+    background-image: url('images/like2.png');
+    height: 100px;
+    background-size: cover;
+}
+.dislikeAction{
+    top: 580px;
+    left: 80px;
+    padding: 0 50px;
+    position: absolute;
+    /* transform: scale(1.1); */
+    background-image: url('images/dislike2.png');
+    height: 100px;
+    background-size: cover;
+}
+
+.dislikeBtn{
+    top: 600px;
+    left: 20px;
+    padding: 0 50px;
+    position: absolute;
+}
