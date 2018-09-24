@@ -10,16 +10,18 @@
     <style>
         body,html{
         margin: 0;
-        height: 100vh;
         }
         .is-relative{
         position: relative;
         padding: 0;
         }
+        .img-fluid {
+            width: auto;
+        }
         .swipe{
         position: absolute;
         left: 125px;
-        top: 495px;
+        top: 500px;
         height: 60px;
         z-index: 4;
         }
@@ -30,9 +32,6 @@
         height: 65px;
         z-index: 4;
         }
-        .con{
-        height: 100vh;
-        }
     </style>
 </head>
 
@@ -41,15 +40,12 @@
         <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4 text-center is-relative">
-                <a href="index2.html"><img src="images/keepSwipe.jpg" class="swipe" alt=""></a>
+                <a href="index.html"><img src="images/keepSwipe.jpg" class="swipe" alt=""></a>
                 <a href="karinaMatchBio.html"><img src="images/view.jpg" class="view" alt=""></a>
-                <img src="images/match1.jpg" class="con" alt="">
+                <img src="images/match1.jpg" class="img-fluid" alt="">
             </div>
             <div class="col-sm-4"></div>
         </div>
     </div>
-
-    <script src=""></script>
 </body>
-
 </html>
